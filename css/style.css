@@ -1,0 +1,590 @@
+*
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  padding: 2px 0;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+h2 {
+  margin-bottom: 32px;
+  padding-left: 8px;
+  position: sticky;
+}
+
+.container {
+  max-width: 2000px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: justify;
+}
+
+.dark {
+  background-color: #FFD811;
+  color: black;
+}
+
+.dark1 {
+  background-color: #10A9FF;
+  color: black;
+}
+
+.dark-link {
+  color: black;
+  border-bottom: 1px solid #10A9FF;
+}
+
+.dark-link:hover,
+.dark-link:focus {
+  color: #FF1861;
+  border-bottom: 1px solid #FF1861;
+}
+
+.text-center {
+  text-align: center;
+}
+
+header {
+  padding: 8px 16px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+header img {
+  width: 120px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header ul li + li {
+  margin-left: 24px;
+}
+
+header a {
+  color: #10A9FF;
+  border-bottom: 1px solid #10A9FF;
+}
+
+header a:hover,
+header a:focus {
+  color: #FF1861;
+  border-bottom: 1px solid #FF1861;
+}
+
+.hero {
+  height: 500px;
+  padding: 24px;
+  background-image: url(../images/Esfirras/banner.jpeg);
+  background-size: cover;
+  background-position: center 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero h1 {
+  color: black;
+  font-size: 36px;
+  background-color: none;
+  padding: 4px 8px;
+}
+
+.dots {
+  margin-top: 24px;
+  display: flex;
+}
+
+.dots button {
+  background-color: #10A9FF;
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dots button + button {
+  margin-left: 8px;
+}
+
+.dots .active {
+  background-color: #10A9FF;
+}
+
+.gallery {
+  padding: 64px 24px 96px;
+}
+
+.gallery h2 {
+  color: #10A9FF;
+}
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  color: #030303;
+}
+
+.gallery-row figure {
+  flex: 1 1 250px;
+}
+
+.gallery-row figure img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.gallery figure figcaption {
+  font-weight: bold;
+}
+
+.history {
+  width: auto; /* Define a largura desejada */
+  height: auto; /* Define a altura desejada */
+  padding: 30px 24px 0;
+  border-top: 4px solid #FF1861;
+  background-color: #10A9FF;
+  border-radius: 5px;
+}
+
+.col {
+  display: auto ;
+}
+
+.history2 {
+  width: auto; /* Define a largura desejada */
+  height: auto; /* Define a altura desejada */
+  padding: 20px 0;
+  border-top: 4px solid #FF1861;
+  background-color: #10A9FF;
+  border-radius: 5px;
+  text-align: left;
+  
+}
+
+.mission {
+  width: 1864px; /* Define a largura desejada */
+  height: 600px; /* Define a altura desejada */
+  padding: 30px 24px 0;
+  border-top: 4px solid #FF1861;
+  background-color: #10A9FF;
+  border-radius: 5px;
+}
+
+.mission-texto {
+  text-align: justify;
+  font-size: 30px;
+}
+
+.history .container {
+  display: flex;
+  align-items: top;
+  flex-wrap: wrap;
+  gap: 24px;
+  border-bottom: 2px solid #FF1861;
+}
+
+.history .container .col {
+  flex: 1 1 350px;
+}
+
+.history img {
+  width: 100%;
+  display: block;
+}
+
+.history p + p {
+  margin-top: 24px;
+}
+
+
+footer {
+  padding: 64px 24px;
+}
+
+/* Estilos para o botão do WhatsApp flutuante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  left: 20px; /* Alterado para o lado esquerdo */
+  z-index: 100;
+}
+
+.whatsapp-float img {
+  width: 50px; /* Tamanho menor */
+}
+
+.contato {
+  background-color: #10A9FF; /* Defina a cor de fundo desejada, neste caso, amarelo */
+  padding: 20px 0; /* Adicione algum preenchimento para separar o conteúdo do fundo */
+  text-align: left; /* Centralize o conteúdo na seção */
+  
+}
+
+.formulario {
+  font-family: Arial, sans-serif;
+  background-color: #FFD811;
+  padding: 10px;
+}
+
+h2 {
+  color: #333;
+  margin: 0;
+}
+
+form {
+  background-color: #FFD811;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #0c0c0c;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #464645;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #10A9FF;
+  color: #fdd835;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.lista-tópicos {
+  margin-top: 2%;
+  list-style-type: square; /* Define o tipo de marcador como quadrado */
+  font-size: 18px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.borda-cinza {
+  border: 1px solid #464645; /* Adicione uma borda azul de 2px */
+  border-radius: 5px; /* Adicione cantos arredondados */
+  padding: 10px; /* Adicione preenchimento interno */
+}
+
+.caixa-formulario {
+  background-color: #FFD811; /* Cor de fundo da caixa */
+  padding: 20px; /* Preenchimento interno da caixa */
+  border: 1px solid #ddd; /* Borda da caixa */  
+  border-radius: 5px; /* Cantos arredondados da caixa */
+}
+
+.titulo-formulario {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  background-color: #10A9FF;
+}
+
+.caixa-contato h2 {
+  margin-top: 0; /* Remove a margem superior do título "Entre em contato conosco" */
+}
+
+.titulo-contatos {
+  text-align: left; /* Centralize o texto */
+  width: 100%;
+  margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+  font-size: 30px; /* Tamanho da fonte */
+  color: #333; /* Cor do texto */
+  top: 1; /* Fixa o título na parte superior da seção */
+  background-color: #fdd835; /* Cor de fundo para garantir legibilidade */
+
+}
+
+.contatos {
+  display: flex;
+  flex-wrap: wrap; /* Permite que as colunas se ajustem em telas menores */
+  justify-content: space-between; /* Separa as colunas */
+  text-align: justify;
+}
+
+.titulo-contatos1{
+  color: black;
+  width: 100%; /* Faz o título ocupar toda a largura */
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 0px; /* Adiciona espaço abaixo do título */
+  font-size: 30px;
+  background-color: #fdd835;
+  padding-top: 35px;
+}
+
+.coluna {
+  width: calc(50% - 20px); /* Define a largura das colunas */
+  padding: 0 10px; /* Adiciona espaçamento interno nas colunas */
+}
+
+.coluna h3 {
+  margin-top: 0; /* Remove a margem superior do título da coluna */
+}
+
+ul {
+  list-style-type: none; /* Remove marcadores de lista */
+  padding: 0; /* Remove preenchimento padrão da lista */
+}
+
+li {
+  margin-bottom: 5px; /* Adiciona espaçamento entre os itens da lista */
+}
+
+.coluna {
+  flex: 1; /* As colunas ocupam o mesmo espaço */
+  padding: 0 10px; /* Adicione um espaçamento à esquerda e à direita */
+}
+
+.coluna h3 {
+  margin-top: 0; /* Remove a margem superior dos títulos das colunas */
+}
+
+/* Estilize as listas */
+ul {
+  list-style-type: none; /* Remova os marcadores de lista padrão */
+  padding: 0; /* Remova o preenchimento padrão */
+}
+
+li {
+  margin-bottom: 5px; /* Adicione um espaçamento entre os itens da lista */
+}
+
+.blocos {
+  display: flex;
+}
+
+.bloco {
+  display: flex; /* Transforma o bloco em um flex container */
+  align-items: baseline; /* Centraliza os itens verticalmente */
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+  background-color: #fdd835;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer; /* Altera o cursor para indicar interatividade */
+  border: 2px solid #030303
+}
+
+.bloco:hover {
+  background-color: #FFD811; /* Altera a cor de fundo ao passar o mouse */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.carousel-item {
+  flex: 0 0 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.botao-saiba-mais {
+  background-color: #10A9FF; 
+  color: #fdd835; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  text-align: center;
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.botao-saiba-mais:hover {
+  background-color: #45a049;
+}
+
+.lista-botoes {
+  display: flex;
+}
+
+.lista-botoes a {
+  margin-right: 10px; /* Define o espaço à direita de cada botão */
+}
+
+.imagem-siga {
+  text-align: center;
+  background-color: #fdd835;
+  padding-bottom: 35px;
+}
+
+.texto-historia {
+  text-align: justify;
+  font-weight: bold;
+  font-size: 20px;
+  color: #030303;
+}
+
+.titulo-contatos2 {
+  color: black;
+  width: 100%; /* Faz o título ocupar toda a largura */
+  text-align: justify; /* Centraliza o texto */
+  font-size: 30px;
+  background-color: #10A9FF;
+}
+
+.imagem-editada {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do bloco */
+  margin-right: 20px; /* Adiciona espaço entre a imagem e a lista */
+  width: 20%; /* Largura da imagem */
+  height: 20x ; /* Altura automática para manter proporções */
+}
+
+ul {
+  flex: 1; /* Faz a lista ocupar o restante do espaço disponível no bloco */
+  list-style-type: none; /* Remove os marcadores de lista padrão */
+  padding-left: 0; /* Remove o preenchimento padrão à esquerda da lista */
+}
+
+li {
+  margin-bottom: 10px; /* Adiciona espaço entre os itens da lista */
+}
+
+
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Adicione esta linha para centralizar verticalmente */
+  text-align: center; /* Adicione esta linha para centralizar o texto */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.imagem-editada {
+  display: block;
+  margin: 0 auto;
+}
+
+.lista-tópicos {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.titulo-contatos1 {
+  text-align: center;
+}
+
+.bloco_receita {
+  display: flex;
+  align-items: center;
+}
+
+.imagem-editada {
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.lista-tópicos {
+  list-style-type: disc;
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 20px; /* Adicione um espaçamento lateral menor */
+  }
+
+  .bloco_receita {
+    flex-direction: column; /* Coloque os itens em coluna */
+    text-align: center; /* Centralize o texto */
+  }
+
+  .imagem-editada {
+    width: 100%; /* Faça as imagens ocuparem a largura total */
+  }
+}

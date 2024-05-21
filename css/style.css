@@ -32,10 +32,13 @@ h2 {
   margin: 0 auto;
   width: 100%;
   text-align: justify;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .dark {
-  background-color: #FFD811;
+  
+  background-color: #fdd835;
   color: black;
 }
 
@@ -167,15 +170,24 @@ header a:focus {
 .history {
   width: auto; /* Define a largura desejada */
   height: auto; /* Define a altura desejada */
-  padding: 30px 24px 0;
+  padding: 30px;
   border-top: 4px solid #FF1861;
   background-color: #10A9FF;
   border-radius: 5px;
 }
 
+.receitas1 {
+  width: auto; /* Define a largura desejada */
+  height: auto; /* Define a altura desejada */
+  padding: 30px;
+  background-color: #10A9FF;
+  border-radius: 5px;
+ 
+}
+
 .col {
   display: auto ;
-}
+} 
 
 .history2 {
   width: auto; /* Define a largura desejada */
@@ -249,17 +261,17 @@ footer {
 
 .formulario {
   font-family: Arial, sans-serif;
-  background-color: #FFD811;
+  background-color: #fdd835;
   padding: 10px;
 }
 
 h2 {
-  color: #333;
+  color: #050505;
   margin: 0;
 }
 
 form {
-  background-color: #FFD811;
+  background-color: #fdd835;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -295,8 +307,16 @@ input[type="submit"] {
 
 .lista-tópicos {
   margin-top: 2%;
-  list-style-type: square; /* Define o tipo de marcador como quadrado */
+  list-style-type: disc; /* Define o tipo de marcador como redondo */
   font-size: 18px;
+  margin-left: 20px;
+}
+
+.lista-tópicos1 {
+  margin-top: 2%;
+  list-style-type: disc; /* Define o tipo de marcador como redondo */
+  font-size: 18px;
+  margin-left: 20px;
 }
 
 input[type="submit"]:hover {
@@ -310,14 +330,14 @@ input[type="submit"]:hover {
 }
 
 .caixa-formulario {
-  background-color: #FFD811; /* Cor de fundo da caixa */
+  background-color: #fdd835; /* Cor de fundo da caixa */
   padding: 20px; /* Preenchimento interno da caixa */
   border: 1px solid #ddd; /* Borda da caixa */  
   border-radius: 5px; /* Cantos arredondados da caixa */
 }
 
 .titulo-formulario {
-  font-size: 25px;
+  font-size: 35px;
   font-weight: bold;
   text-align: left;
   background-color: #10A9FF;
@@ -352,7 +372,23 @@ input[type="submit"]:hover {
   margin-bottom: 0px; /* Adiciona espaço abaixo do título */
   font-size: 30px;
   background-color: #fdd835;
-  padding-top: 35px;
+  text-align: center;
+  padding-top: 0%;
+}
+
+
+
+.titulo-receita{
+  display: flex; /* Transforma o bloco em um flex container */
+  align-items: center; /* Centraliza os itens verticalmente */
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+  background-color: #fdd835;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer; /* Altera o cursor para indicar interatividade */
+  border: 2px solid #030303
 }
 
 .coluna {
@@ -398,7 +434,24 @@ li {
 
 .bloco {
   display: flex; /* Transforma o bloco em um flex container */
-  align-items: baseline; /* Centraliza os itens verticalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+  background-color: #fdd835;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer; /* Altera o cursor para indicar interatividade */
+  border: 2px solid #030303
+}
+
+.blocomvv {
+
+  width: 99%;
+  position: relative;
+  overflow: hidden;
+  display: flex; /* Transforma o bloco em um flex container */
+  align-items: start 1%; /* Centraliza os itens verticalmente */
   flex-direction: column;
   flex: 1;
   padding: 20px;
@@ -410,7 +463,7 @@ li {
 }
 
 .bloco:hover {
-  background-color: #FFD811; /* Altera a cor de fundo ao passar o mouse */
+  background-color: #fdd835; /* Altera a cor de fundo ao passar o mouse */
 }
 
 ul {
@@ -487,6 +540,7 @@ body {
 
 .lista-botoes {
   display: flex;
+  
 }
 
 .lista-botoes a {
@@ -497,7 +551,10 @@ body {
   text-align: center;
   background-color: #fdd835;
   padding-bottom: 35px;
+  font-size: 35px;
+  
 }
+
 
 .texto-historia {
   text-align: justify;
@@ -509,16 +566,29 @@ body {
 .titulo-contatos2 {
   color: black;
   width: 100%; /* Faz o título ocupar toda a largura */
-  text-align: justify; /* Centraliza o texto */
-  font-size: 30px;
+  text-align: center; /* Centraliza o texto */
+  font-size: 35px;
   background-color: #10A9FF;
+ 
 }
 
 .imagem-editada {
+  display: block;
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  border-radius: 10px;
+  max-width: 50%; /* Garante que a imagem não ultrapasse 50% da largura do contêiner */
+  width: 20%; /* Largura da imagem */
+  height: auto; /* Altura automática para manter proporções */
+}
+
+.imagem-editada1 {
+  margin: auto;
+  border-radius: 18px;
+  margin-top: 0.50%;
   max-width: 100%; /* Garante que a imagem não ultrapasse a largura do bloco */
   margin-right: 20px; /* Adiciona espaço entre a imagem e a lista */
-  width: 20%; /* Largura da imagem */
-  height: 20x ; /* Altura automática para manter proporções */
+  width: 100%; /* Largura da imagem */
+  height: 200x ; /* Altura automática para manter proporções */
 }
 
 ul {
@@ -540,41 +610,19 @@ li {
   text-align: center; /* Adicione esta linha para centralizar o texto */
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-.imagem-editada {
-  display: block;
-  margin: 0 auto;
-}
 
-.lista-tópicos {
-  list-style-type: disc;
-  margin-left: 20px;
-}
 
-.titulo-contatos1 {
-  text-align: center;
-}
 
 .bloco_receita {
   display: flex;
   align-items: center;
 }
 
-.imagem-editada {
-  border-radius: 10px;
-  margin-right: 20px;
-}
-
-.lista-tópicos {
-  list-style-type: disc;
-}
 
 /* Estilos para telas menores */
 @media screen and (max-width: 768px) {
+ 
   .container {
     padding: 0 20px; /* Adicione um espaçamento lateral menor */
   }

@@ -714,3 +714,8 @@ video {
 .titulo-video {
   margin-bottom: 24px; /* Adicione um espaço abaixo do título */
 }
+
+.videos-container {
+  display: grid;
+  grid-template-colums: 1fr 1fr;
+}

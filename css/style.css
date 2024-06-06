@@ -698,16 +698,10 @@ li {
   border: 0px;
 }
 
-#video {
-  max-width: 350px; /* Defina a largura máxima do vídeo */
-  min-height: 635px;
-  margin: auto; /* Centralize o vídeo na página */ 
-}
-
-video {
+.flex-container video {
   
-  width: 100%; /*  Faça o vídeo ocupar toda a largura do contêiner */
-  height: auto; /* Mantenha a proporção de aspecto do vídeo */
+  width: 700px; /*  Faça o vídeo ocupar toda a largura do contêiner */
+  height: 500px; /* Mantenha a proporção de aspecto do vídeo */
   border-radius: 18px;
 }
 

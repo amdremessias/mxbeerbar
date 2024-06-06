@@ -698,8 +698,16 @@ li {
   border: 0px;
 }
 
+.flex-container {
+  width: 750px; /*  Faça o vídeo ocupar toda a largura do contêiner */
+  height: 550px; /* Mantenha a proporção de aspecto do vídeo */
+  border-radius: 18px;
+  background-color: #fdd835;
+  border: 4px solid black;
+}
+
+
 .flex-container video {
-  
   width: 700px; /*  Faça o vídeo ocupar toda a largura do contêiner */
   height: 500px; /* Mantenha a proporção de aspecto do vídeo */
   border-radius: 18px;

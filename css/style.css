@@ -699,11 +699,14 @@ li {
 }
 
 .flex-container {
+  display: flex;
+  justify-content: center;
+  align-itens: center;
   width: 750px; /*  Faça o vídeo ocupar toda a largura do contêiner */
   height: 550px; /* Mantenha a proporção de aspecto do vídeo */
   border-radius: 18px;
   background-color: #fdd835;
-  border: 4px solid black;
+  border: 2px solid black;
 }
 
 
@@ -711,6 +714,7 @@ li {
   width: 700px; /*  Faça o vídeo ocupar toda a largura do contêiner */
   height: 500px; /* Mantenha a proporção de aspecto do vídeo */
   border-radius: 18px;
+  background-color: black;
 }
 
 .titulo-video {
